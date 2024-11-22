@@ -23,22 +23,16 @@ git clone https://github.com/0x6DD8/chatthing.git
 cd chatthing
 ```
 
-2. Install Go dependencies:
-
-```sh
-go mod tidy
-```
-
-3. Build the project:
+2. Build the project:
 
 ```sh
 make all
 ```
 
-4. Run the server:
+3. Run the server:
 
 ```sh
-go run main.go
+./target/chatthing_linux # ./target/chatthing.exe on Windows
 ```
 
 The server will start on port 5000.
@@ -54,5 +48,5 @@ This project is licensed under the Unlicense. See the [LICENSE](LICENSE) file fo
 ## Acknowledgements
 
 - [Chatding](https://github.com/MoeDevelops/chatding) - The original project that inspired this reimplementation.
-- [gomponents](https://maragu.dev/gomponents) - A Go library for building HTML components.
+- [gomponents](https://www.gomponents.com/) - A Go library for building HTML components.
 - [htmx](https://htmx.org) - A library for accessing modern browser features directly from HTML.
