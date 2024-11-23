@@ -36,5 +36,13 @@ uninstall-linux:
 	@echo "Uninstalling for Linux..."
 	sudo rm -f /usr/local/bin/$(BINARY_NAME)
 
+build-docker:
+	@echo "Building Docker image..."
+	docker build -t $(BINARY_NAME) .
+
+run-docker:
+	@echo "Running Docker container..."
+	docker run -it --rm $(BINARY_NAME)
+
 .PHONY:
-	all build-linux build-windows clean
+	all build-linux build-windows build-docker run-docker clean
