@@ -1,4 +1,5 @@
 FROM alpine:edge
+LABEL org.opencontainers.image.source=https://github.com/0x6DD8/chatthing
 
 # Install packages
 RUN apk update && \
