@@ -6,7 +6,7 @@ import (
 	"fmt"
 )
 
-const PORT string = ":5000"
+const PORT string = ":5002"
 
 //go:embed static
 var staticFiles embed.FS
