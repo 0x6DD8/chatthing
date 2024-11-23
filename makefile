@@ -42,7 +42,7 @@ build-docker:
 
 run-docker:
 	@echo "Running Docker container..."
-	docker run -it --rm $(BINARY_NAME)
+	docker run -p 5002:5002 -it --rm $(BINARY_NAME)
 
 .PHONY:
 	all build-linux build-windows build-docker run-docker clean
